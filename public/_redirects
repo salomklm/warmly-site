@@ -1,0 +1,5 @@
+# Redirect apex domain to www (fallback for non-Vercel hosts)
+https://warmly.fr/* https://www.warmly.fr/:splat 301!
+
+# SPA fallback
+/*  /index.html  200

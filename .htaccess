@@ -1,0 +1,17 @@
+RewriteEngine On
+# Serve robots/sitemap directly
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^sitemap\.xml$ - [L]
+# SPA fallback
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# ✅ Long cache for static assets with hashes
+<FilesMatch "\.(avif|webp|jpg|jpeg|png|gif|svg|woff2|css|js)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+# Short cache for HTML
+<FilesMatch "\.(html)$">
+  Header set Cache-Control "public, max-age=300"
+</FilesMatch>

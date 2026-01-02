@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Warmly - Short chauffant innovant pour soulager naturellement les douleurs menstruelles et d'endométriose. Solution confortable et discrète pour retrouver votre liberté." />
+    <meta name="keywords" content="culotte chauffante, douleurs menstruelles, endométriose, soulagement naturel, vêtement chauffant, règles douloureuses" />
+    <meta property="og:title" content="Warmly | Soulagement Naturel des Douleurs Menstruelles" />
+    <meta property="og:description" content="Culotte chauffante innovante pour soulager naturellement les douleurs menstruelles et d'endométriose. Solution confortable et discrète." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.warmly.fr" />
+    <title>Warmly | Soulagement Naturel des Douleurs Menstruelles</title>
+    
+    <!-- Google Fonts optimized -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Warmly",
+      "url": "https://warmly.fr",
+      "logo": "https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_400/logo-warmly.png",
+      "sameAs": [
+        "https://www.instagram.com/warmly",
+        "https://www.tiktok.com/@warmly"
+      ]
+    }
+    </script>
+    
+    <!-- Preload hero image optimized for mobile with WebP/AVIF support -->
+    <link rel="preload" as="image"
+      href="https://res.cloudinary.com/dveeoqhx5/image/upload/f_webp,q_auto:low,w_900/2_w2twtx.webp"
+      imagesrcset="
+        https://res.cloudinary.com/dveeoqhx5/image/upload/f_webp,q_auto:low,w_600/2_w2twtx.webp 600w,
+        https://res.cloudinary.com/dveeoqhx5/image/upload/f_webp,q_auto:low,w_900/2_w2twtx.webp 900w,
+        https://res.cloudinary.com/dveeoqhx5/image/upload/f_webp,q_auto:low,w_1200/2_w2twtx.webp 1200w"
+      imagesizes="(max-width: 640px) 95vw, (max-width: 1024px) 85vw, 1200px"
+      fetchpriority="high">
+    
+    <!-- Critical and custom CSS consolidated -->
+    <style>
+      /* === FONTS === */
+      body {
+        font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        font-display: swap;
+      }
+      
+      /* === CRITICAL ABOVE-THE-FOLD === */
+      .hero-section {
+        min-height: 100vh;
+        background-color: rgba(224, 182, 174, 0.1);
+        padding-top: 6rem;
+      }
+      
+      .hero-title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #642315;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+      
+      .hero-description {
+        color: #374151;
+        margin-bottom: 2rem;
+        max-width: 32rem;
+        font-size: 0.875rem;
+      }
+      
+      .cta-button {
+        background-color: #642315;
+        color: white;
+        font-weight: 500;
+        padding: 0.625rem 1.25rem;
+        border-radius: 0.125rem;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .cta-button:hover {
+        background-color: #4e1a0e;
+      }
+      
+      /* === HEADER === */
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #642315;
+        text-decoration: none;
+      }
+      
+      /* === LAYOUT STABILITY === */
+      #product-component-1749563113005 {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .mobile-menu-container {
+        min-height: 0;
+        overflow: hidden;
+        transition: min-height 0.3s ease;
+      }
+      
+      .mobile-menu-container.open {
+        min-height: 200px;
+      }
+      
+      .testimonial-container {
+        min-height: 300px;
+      }
+      
+      /* === IMAGES === */
+      .product-image-main {
+        aspect-ratio: 1;
+        background-color: #f3f4f6;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      
+      .product-image-thumb {
+        aspect-ratio: 1;
+        background-color: #f3f4f6;
+        width: 100%;
+        max-width: 80px;
+      }
+      
+      /* Carousel container optimized for mobile */
+      .carousel-container {
+        min-height: 300px;
+        background-color: #f9fafb;
+        aspect-ratio: 4/3;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      /* === ANIMATIONS === */
+      .loading-placeholder {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+      
+      @keyframes loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+      
+      /* Reveal animations */
+      .reveal-section {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+      }
+      
+      .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      /* Optimized transitions */
+      .transition-colors {
+        transition-property: color, background-color, border-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms;
+      }
+      
+      .transition-transform {
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+      }
+      
+      /* === RESPONSIVE === */
+      @media (min-width: 640px) {
+        .hero-description {
+          font-size: 1rem;
+        }
+        
+        .product-image-main {
+          max-width: 500px;
+        }
+        
+        .product-image-thumb {
+          max-width: 100px;
+        }
+        
+        .carousel-container {
+          min-height: 350px;
+          max-width: 600px;
+        }
+        
+        .testimonial-container {
+          min-height: 320px;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 2.25rem;
+        }
+        
+        .hero-description {
+          font-size: 1rem;
+        }
+        
+        .product-image-main {
+          max-width: 600px;
+        }
+        
+        .product-image-thumb {
+          max-width: 120px;
+        }
+        
+        .carousel-container {
+          min-height: 400px;
+          max-width: 700px;
+        }
+        
+        .testimonial-container {
+          min-height: 280px;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .hero-title {
+          font-size: 3rem;
+        }
+        
+        .carousel-container {
+          min-height: 450px;
+          max-width: 800px;
+        }
+      }
+      
+      @media (min-width: 1280px) {
+        .hero-title {
+          font-size: 3.75rem;
+        }
+        
+        .carousel-container {
+          min-height: 500px;
+          max-width: 900px;
+        }
+      }
+    </style>
+    
+    <!-- ✅ SEO de base -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Warmly" />
+
+    <!-- ✅ Titre et description -->
+    <title>Warmly | Culotte chauffante pour soulager naturellement les douleurs menstruelles</title>
+    <meta name="description" content="Warmly est la première culotte chauffante conçue pour soulager naturellement les douleurs menstruelles et d'endométriose. Confort, liberté et chaleur apaisante à tout moment.">
+    <meta name="keywords" content="culotte chauffante, douleurs menstruelles, soulagement règles douloureuses, soulagement endométriose, vêtement chauffant femme, bien-être féminin">
+
+    <!-- ✅ Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Warmly | Soulagement naturel des douleurs menstruelles">
+    <meta property="og:description" content="Découvrez Warmly, la culotte chauffante qui allie technologie et douceur pour apaiser vos douleurs menstruelles.">
+    <meta property="og:url" content="https://warmly.fr">
+    <meta property="og:image" content="https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_1200/v1698765432/warmly_cover.jpg">
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Warmly | Soulagement naturel des douleurs menstruelles">
+    <meta name="twitter:description" content="La culotte chauffante Warmly soulage naturellement les douleurs menstruelles. Confort, élégance et bien-être.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_1200/v1698765432/warmly_cover.jpg">
+
+    <!-- ✅ Données structurées (Google comprend la marque Warmly) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Warmly",
+      "url": "https://warmly.fr",
+      "logo": "https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_400/logo-warmly.png",
+      "description": "Warmly est une marque française qui conçoit des culottes chauffantes pour soulager naturellement les douleurs menstruelles et d'endométriose.",
+      "sameAs": [
+        "https://www.instagram.com/warmly",
+        "https://www.tiktok.com/@warmly"
+      ]
+    }
+    </script>
+    
+    <!-- ✅ SEO de base -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Warmly" />
+
+    <!-- ✅ Titre et description -->
+    <title>Warmly | Culotte chauffante pour soulager naturellement les douleurs menstruelles</title>
+    <meta name="description" content="Warmly est la première culotte chauffante conçue pour soulager naturellement les douleurs menstruelles et d'endométriose. Confort, liberté et chaleur apaisante à tout moment.">
+    <meta name="keywords" content="culotte chauffante, douleurs menstruelles, soulagement règles douloureuses, soulagement endométriose, vêtement chauffant femme, bien-être féminin">
+
+    <!-- ✅ Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Warmly | Soulagement naturel des douleurs menstruelles">
+    <meta property="og:description" content="Découvrez Warmly, la culotte chauffante qui allie technologie et douceur pour apaiser vos douleurs menstruelles.">
+    <meta property="og:url" content="https://warmly.fr">
+    <meta property="og:image" content="https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_1200/v1698765432/warmly_cover.jpg">
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Warmly | Soulagement naturel des douleurs menstruelles">
+    <meta name="twitter:description" content="La culotte chauffante Warmly soulage naturellement les douleurs menstruelles. Confort, élégance et bien-être.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_1200/v1698765432/warmly_cover.jpg">
+
+    <!-- ✅ Données structurées (Google comprend la marque Warmly) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Warmly",
+      "url": "https://warmly.fr",
+      "logo": "https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_400/logo-warmly.png",
+      "description": "Warmly est une marque française qui conçoit des culottes chauffantes pour soulager naturellement les douleurs menstruelles et d'endométriose.",
+      "sameAs": [
+        "https://www.instagram.com/warmly",
+        "https://www.tiktok.com/@warmly"
+      ]
+    }
+    </script>
+    
+    <!-- ✅ Product structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Warmly – Culotte chauffante pour soulager naturellement les douleurs menstruelles",
+      "image": [
+        "https://res.cloudinary.com/dveeoqhx5/image/upload/f_auto,q_auto,w_800/v1698765432/warmly_product.jpg"
+      ],
+      "description": "La culotte chauffante Warmly soulage naturellement les douleurs menstruelles et d'endométriose grâce à une technologie de chaleur douce intégrée. Élégante, confortable et rechargeable par USB.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Warmly"
+      },
+      "sku": "WARM001",
+      "mpn": "WARM001",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://warmly.fr",
+        "priceCurrency": "EUR",
+        "price": "89.00",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Warmly"
+        }
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

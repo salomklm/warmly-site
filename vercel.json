@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "warmly.fr"
+        }
+      ],
+      "destination": "https://www.warmly.fr/:path*",
+      "permanent": true,
+      "statusCode": 301
+    }
+  ]
+}
