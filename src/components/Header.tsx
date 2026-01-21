@@ -50,7 +50,7 @@ const Header = () => {
                   onClick={handlePreorder}
                   className="bg-[#642315] text-white font-medium py-2.5 px-5 rounded-sm hover:bg-[#4e1a0e] transition-colors"
                 >
-                  Précommander
+                  Commander
                 </button>
               )}
             </div>

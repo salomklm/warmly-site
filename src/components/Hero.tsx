@@ -108,7 +108,7 @@ const Hero = () => {
                                transition-colors duration-200
                                sm:px-8 sm:py-3"
                   >
-                    Précommander
+                    Commander
                   </Link>
                 </div>
               </div>

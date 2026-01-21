@@ -275,7 +275,7 @@ const ProductPage = () => {
 
           {/* === Colonne DROITE : INFOS PRODUIT === */}
           <aside className="w-full space-y-4">
-            <h1 className="text-3xl font-semibold text-[#6b1d07]">Culotte chauffante - Précommande</h1>
+            <h1 className="text-3xl font-semibold text-[#6b1d07]">Culotte chauffante - Commande</h1>
             <p className="text-xl font-medium">97 € — Livraison gratuite</p>
             <p className="text-sm text-gray-600 -mt-1">Expédition depuis la France – Livraison prévue <strong>début février</strong></p>
 
@@ -379,8 +379,8 @@ const ProductPage = () => {
                 {!selectedSize
                 ? 'Sélectionnez une taille'
                   : !isSelectedSizeAvailable
-                ? 'Taille non disponible' 
-                : 'Précommander maintenant'
+                ? 'Taille non disponible'
+                : 'Commander maintenant'
               }
             </button>
               );
